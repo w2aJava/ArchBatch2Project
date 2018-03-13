@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test name="Test2(failed)" parallel="methods">
+    <classes>
+      <class name="com.w2a.archBatch2.Rough.TestCase2">
+        <methods>
+          <include name="validateUploadProfilePicture"/>
+        </methods>
+      </class> <!-- com.w2a.archBatch2.Rough.TestCase2 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
