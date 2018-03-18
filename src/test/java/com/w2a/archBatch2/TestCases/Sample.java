@@ -10,6 +10,6 @@ public class Sample {
 	
 	public static void main(String[] args) {
 		
-		WebDriver driver= new ChromeDriver();
+		WebDriver driver= new FirefoxDriver();
 	}
 }

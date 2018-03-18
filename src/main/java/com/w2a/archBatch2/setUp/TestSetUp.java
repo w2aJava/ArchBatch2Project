@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -19,20 +20,22 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
+import com.w2a.archBatch2.TestUtils.DriverFactory;
+import com.w2a.archBatch2.TestUtils.DriverManager;
 import com.w2a.archBatch2.TestUtils.ExcelReader;
 
 public class TestSetUp {
 
-	public static  WebDriver driver;
-	public Properties configProperty;
-	public Properties ORProperty;
+	// public WebDriver driver;
+	public static Properties configProperty;
+	public static Properties ORProperty;
 
 	//
 	public ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\testData\\simple.xlsx");
 
 	@BeforeSuite
-	public void beforeSuite() {
+	public synchronized void beforeSuite() {
 		try {
 			FileInputStream fi = new FileInputStream(new File(
 					System.getProperty("user.dir") + "\\src\\test\\resources\\propertyFIles\\config.properties"));
@@ -61,26 +64,29 @@ public class TestSetUp {
 	}
 
 	@BeforeMethod
-	public void beforeMethod() {
-	//	driver = null;
-		if (driver == null) {
+	public synchronized void beforeMethod(Method method) {
 
-			if (configProperty.getProperty("browser").equalsIgnoreCase("firefox")) {
-				driver = new FirefoxDriver();
-			} else if (configProperty.getProperty("browser").equalsIgnoreCase("chrome")) {
-				driver = new ChromeDriver();
-			}
+		WebDriver driver = null;
+
+		if (driver == null) {
+			// configProperty = PropertyFileManager.createConfigFileProperty();
+			driver = DriverFactory.createDriverInstance(configProperty.getProperty("browser"));
+			System.out.println("Driver-->" + DriverManager.getDriver());
+			DriverManager.getDriver().navigate().to(configProperty.getProperty("url"));
+
 		}
-		System.out.println("driver-->"+driver);
-		driver.navigate().to(configProperty.getProperty("url"));
+
+		/*
+		 * ExtentTest child =
+		 * classLevelReport.get().createNode(method.getName());
+		 * testLevelReport.set(child); testLevelReport.get().log(Status.INFO,
+		 * "Execution of Test Case-"+" "+method.getName()+" started");
+		 */
 	}
 
 	@AfterMethod
 	public void afterMethod() {
-		// browser close
-		// testlink update
-		// extent report flush
-		driver.quit();
+		// DriverFactory.destroyDriver();
 	}
 
 	@AfterClass

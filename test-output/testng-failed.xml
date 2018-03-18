@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test name="Test2(failed)" parallel="methods">
     <classes>
       <class name="com.w2a.archBatch2.TestCases.ValidateFacebookLogin">
         <methods>
@@ -12,10 +12,24 @@
           <include name="afterTest"/>
           <include name="beforeSuite"/>
           <include name="afterClass"/>
+          <include name="tc_02"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.w2a.archBatch2.TestCases.ValidateFacebookLogin -->
+      <class name="com.w2a.archBatch2.TestCases.TestCase1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="tc_03"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.w2a.archBatch2.TestCases.TestCase1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

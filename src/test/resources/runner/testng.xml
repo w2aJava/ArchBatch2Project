@@ -4,7 +4,8 @@
 	<test name="Test2">
 		<classes>
 			<!-- class name="com.w2a.archBatch2.Rough.TestCase2" /> -->
-			<class name="com.w2a.archBatch2.Rough.TestCase" />
+			<class name="com.w2a.archBatch2.TestCases.ValidateFacebookLogin" />
+			<class name="com.w2a.archBatch2.TestCases.TestCase1" />
 			
 		</classes>
 	</test> <!-- Test -->

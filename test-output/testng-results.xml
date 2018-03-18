@@ -1,199 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="3" ignored="4" total="7" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1497" started-at="2018-03-17T08:55:49Z" finished-at="2018-03-17T08:55:51Z">
+  <suite name="Suite" duration-ms="53847" started-at="2018-03-18T10:05:48Z" finished-at="2018-03-18T10:06:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1497" started-at="2018-03-17T08:55:49Z" finished-at="2018-03-17T08:55:51Z">
+    <test name="Test2" duration-ms="53847" started-at="2018-03-18T10:05:48Z" finished-at="2018-03-18T10:06:41Z">
       <class name="com.w2a.archBatch2.TestCases.ValidateFacebookLogin">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@bcec361]" name="beforeSuite" is-config="true" duration-ms="23" started-at="2018-03-17T14:25:49Z" finished-at="2018-03-17T14:25:49Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="beforeSuite" is-config="true" duration-ms="27" started-at="2018-03-18T15:35:48Z" finished-at="2018-03-18T15:35:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@bcec361]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-03-17T14:25:49Z" finished-at="2018-03-17T14:25:49Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-03-18T15:35:48Z" finished-at="2018-03-18T15:35:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@bcec361]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-03-17T14:25:49Z" finished-at="2018-03-17T14:25:49Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-03-18T15:35:48Z" finished-at="2018-03-18T15:35:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@bcec361]" name="beforeMethod" is-config="true" duration-ms="1353" started-at="2018-03-17T14:25:49Z" finished-at="2018-03-17T14:25:50Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[org/w3c/dom/ElementTraversal]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(Unknown Source)
-	at java.security.SecureClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.access$100(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
-	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
-	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
-	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
-	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
-	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
-	at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:98)
-	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:61)
-	at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:64)
-	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
-	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
-	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
-	at com.w2a.archBatch2.setUp.TestSetUp.beforeMethod(TestSetUp.java:69)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	... 62 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="beforeMethod" is-config="true" duration-ms="40294" started-at="2018-03-18T15:35:48Z" finished-at="2018-03-18T15:36:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.w2a.archBatch2.TestCases.ValidateFacebookLogin.tc_02()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="validateFBLoginWIthValidCredentials()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@bcec361]" name="validateFBLoginWIthValidCredentials" duration-ms="63" started-at="2018-03-17T14:25:50Z" finished-at="2018-03-17T14:25:51Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[org/w3c/dom/ElementTraversal]]>
-            </message>
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="beforeMethod" is-config="true" duration-ms="24979" started-at="2018-03-18T15:35:48Z" finished-at="2018-03-18T15:36:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.w2a.archBatch2.TestCases.ValidateFacebookLogin.validateFBLoginWIthValidCredentials()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="validateFBLoginWIthValidCredentials()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="validateFBLoginWIthValidCredentials" duration-ms="16225" started-at="2018-03-18T15:36:13Z" finished-at="2018-03-18T15:36:29Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(Unknown Source)
-	at java.security.SecureClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.access$100(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
-	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
-	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
-	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
-	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
-	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
-	at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:98)
-	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:61)
-	at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:64)
-	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
-	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
-	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
-	at com.w2a.archBatch2.setUp.TestSetUp.beforeMethod(TestSetUp.java:69)
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.w2a.archBatch2.PageObjects.BasePage.waitForPageLoad(BasePage.java:35)
+	at com.w2a.archBatch2.PageObjects.BasePage.openPage(BasePage.java:27)
+	at com.w2a.archBatch2.PageObjects.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:46)
+	at com.w2a.archBatch2.TestCases.ValidateFacebookLogin.validateFBLoginWIthValidCredentials(ValidateFacebookLogin.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	... 62 more
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateFBLoginWIthValidCredentials -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@bcec361]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-03-17T14:25:51Z" finished-at="2018-03-17T14:25:51Z">
+        <test-method status="FAIL" signature="tc_02()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="tc_02" duration-ms="13508" started-at="2018-03-18T15:36:28Z" finished-at="2018-03-18T15:36:41Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.w2a.archBatch2.PageObjects.BasePage.waitForPageLoad(BasePage.java:35)
+	at com.w2a.archBatch2.PageObjects.BasePage.openPage(BasePage.java:27)
+	at com.w2a.archBatch2.PageObjects.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:46)
+	at com.w2a.archBatch2.TestCases.ValidateFacebookLogin.tc_02(ValidateFacebookLogin.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_02 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-18T15:36:29Z" finished-at="2018-03-18T15:36:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-03-18T15:36:41Z" finished-at="2018-03-18T15:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-03-18T15:36:41Z" finished-at="2018-03-18T15:36:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@bcec361]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-03-17T14:25:51Z" finished-at="2018-03-17T14:25:51Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-03-18T15:36:41Z" finished-at="2018-03-18T15:36:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="afterSuite()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@bcec361]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-03-17T14:25:51Z" finished-at="2018-03-17T14:25:51Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@131ef10]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-03-18T15:36:42Z" finished-at="2018-03-18T15:36:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.w2a.archBatch2.TestCases.ValidateFacebookLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.w2a.archBatch2.TestCases.TestCase1">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.archBatch2.TestCases.TestCase1@55b0dcab]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-03-18T15:35:48Z" finished-at="2018-03-18T15:35:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.archBatch2.TestCases.TestCase1@55b0dcab]" name="beforeMethod" is-config="true" duration-ms="23365" started-at="2018-03-18T15:35:48Z" finished-at="2018-03-18T15:36:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.w2a.archBatch2.TestCases.TestCase1.tc_03()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="tc_03()[pri:0, instance:com.w2a.archBatch2.TestCases.TestCase1@55b0dcab]" name="tc_03" duration-ms="16086" started-at="2018-03-18T15:36:11Z" finished-at="2018-03-18T15:36:27Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.w2a.archBatch2.PageObjects.BasePage.waitForPageLoad(BasePage.java:35)
+	at com.w2a.archBatch2.PageObjects.BasePage.openPage(BasePage.java:27)
+	at com.w2a.archBatch2.PageObjects.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:46)
+	at com.w2a.archBatch2.TestCases.TestCase1.tc_03(TestCase1.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_03 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.w2a.archBatch2.TestCases.TestCase1@55b0dcab]" name="afterMethod" is-config="true" duration-ms="4" started-at="2018-03-18T15:36:27Z" finished-at="2018-03-18T15:36:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.w2a.archBatch2.TestCases.TestCase1@55b0dcab]" name="afterClass" is-config="true" duration-ms="3" started-at="2018-03-18T15:36:27Z" finished-at="2018-03-18T15:36:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.w2a.archBatch2.TestCases.TestCase1 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>
