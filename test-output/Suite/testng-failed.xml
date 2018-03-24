@@ -6,30 +6,16 @@
       <class name="com.w2a.archBatch2.TestCases.ValidateFacebookLogin">
         <methods>
           <include name="beforeClass"/>
-          <include name="validateFBLoginWIthValidCredentials"/>
+          <include name="validateFBLoginWIthValidCred" invocation-numbers="0 1"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
           <include name="afterClass"/>
-          <include name="tc_02"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.w2a.archBatch2.TestCases.ValidateFacebookLogin -->
-      <class name="com.w2a.archBatch2.TestCases.TestCase1">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="afterSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="tc_03"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.w2a.archBatch2.TestCases.TestCase1 -->
     </classes>
   </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

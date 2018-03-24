@@ -20,15 +20,20 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.w2a.archBatch2.TestUtils.DriverFactory;
 import com.w2a.archBatch2.TestUtils.DriverManager;
 import com.w2a.archBatch2.TestUtils.ExcelReader;
+import com.w2a.archBatch2.TestUtils.ExtentManager;
 
 public class TestSetUp {
 
 	// public WebDriver driver;
 	public static Properties configProperty;
 	public static Properties ORProperty;
+	public static ExtentReports extent;
+	public static ThreadLocal<ExtentTest> parentTest = new ThreadLocal<ExtentTest>();
+	public static ThreadLocal<ExtentTest> testCaseLogger = new ThreadLocal<ExtentTest>();
 
 	//
 	public ExcelReader excel = new ExcelReader(
@@ -50,6 +55,7 @@ public class TestSetUp {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		extent = ExtentManager.GetExtent();
 
 	}
 
@@ -61,6 +67,8 @@ public class TestSetUp {
 	@BeforeClass
 	public void beforeClass() {
 		// extent reporting
+		ExtentTest parent = extent.createTest(getClass().getName());
+		parentTest.set(parent);
 	}
 
 	@BeforeMethod
@@ -74,6 +82,8 @@ public class TestSetUp {
 			System.out.println("Driver-->" + DriverManager.getDriver());
 			DriverManager.getDriver().navigate().to(configProperty.getProperty("url"));
 
+			ExtentTest child = parentTest.get().createNode(method.getName());
+			testCaseLogger.set(child);
 		}
 
 		/*
@@ -86,7 +96,8 @@ public class TestSetUp {
 
 	@AfterMethod
 	public void afterMethod() {
-		// DriverFactory.destroyDriver();
+		extent.flush();
+		DriverFactory.destroyDriver();
 	}
 
 	@AfterClass

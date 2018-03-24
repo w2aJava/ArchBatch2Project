@@ -1,29 +1,35 @@
 package com.w2a.archBatch2.TestCases;
 
+import java.util.Hashtable;
+
 import org.testng.annotations.Test;
 
 import com.w2a.archBatch2.PageObjects.FacebookHomepage;
 import com.w2a.archBatch2.PageObjects.FacebookLandingPage;
+import com.w2a.archBatch2.TestUtils.TestUtils;
 import com.w2a.archBatch2.setUp.TestSetUp;
 
 public class ValidateFacebookLogin extends TestSetUp {
 	
-	@Test
-	public void validateFBLoginWIthValidCredentials()
+	@Test(dataProviderClass=TestUtils.class,dataProvider="dp")
+	public void validateFBLoginWIthValidCred(Hashtable<String, String> data)
 	{
+		testCaseLogger.get().assignAuthor("Rahul");
+		testCaseLogger.get().assignCategory("regression");
 		//System.out.println("validateFBLoginWIthValidCredentials");
 		FacebookLandingPage landingPage= new FacebookLandingPage().open();
-		FacebookHomepage homePage=landingPage.doLoginWithValidCredentials("ddfg", "sdfsdf");
+		System.out.println(data);
+		FacebookHomepage homePage=landingPage.doLoginWithValidCredentials(data.get("username"), data.get("password"));
 		
 	}
 	
-	@Test
-	public void tc_02()
+	/*@Test(dataProviderClass=TestUtils.class,dataProvider="dp")
+	public void tc_02(Hashtable<String, String> data)
 	{
 		//System.out.println("tc_02");
 		FacebookLandingPage landingPage= new FacebookLandingPage().open();
-		FacebookHomepage homePage=landingPage.doLoginWithValidCredentials("ddfg", "sdfsdf");
+		FacebookHomepage homePage=landingPage.doLoginWithValidCredentials(data.get("username"), data.get("password"));
 		
 	}
-
+*/
 }

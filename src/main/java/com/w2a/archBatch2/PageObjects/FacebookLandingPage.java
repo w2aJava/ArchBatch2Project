@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.aventstack.extentreports.Status;
+
 public class FacebookLandingPage extends BasePage{
 	
 	/*public FacebookLandingPage(WebDriver driver)
@@ -41,6 +43,7 @@ public class FacebookLandingPage extends BasePage{
 	public FacebookHomepage doLoginWithValidCredentials(String email,String pass)
 	{
 		userName.sendKeys(email);
+		testCaseLogger.get().log(Status.INFO, "Entered "+email+" as userName");
 		password.sendKeys(pass);
 		loginButton.click();
 		return (FacebookHomepage) openPage(FacebookHomepage.class);
