@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 24, 2018 11:41:37 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 31, 2018 11:25:26 AM</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +72,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -84,7 +85,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>regression</a></li>
+					<li><a href='#'>Sanity</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -132,10 +133,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> class(es) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> class(es) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> class(es) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> class(es) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -147,10 +148,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -165,7 +166,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> log(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> log(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='42.857%'>3</span> log(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='57.143%'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -179,30 +180,30 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>com.w2a.archBatch2.TestCases.ValidateFacebookLogin</span>
-						<span class='test-time'>Mar 24, 2018 11:41:38 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>ValidateFacebookLogin</span>
+						<span class='test-time'>Mar 31, 2018 11:25:26 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 24, 2018 11:41:38 AM</span>
-	<span class='label end-time'>Mar 24, 2018 11:42:09 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+780ms</span>
+	<span class='label start-time'>Mar 31, 2018 11:25:26 AM</span>
+	<span class='label end-time'>Mar 31, 2018 11:25:45 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+626ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+				<li class='node level-1 leaf fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
 						<div class='node-name'>validateFBLoginWIthValidCred</div>						
-						<span class='node-time'>Mar 24, 2018 11:41:51 AM</span>
-						<span class='node-duration'>0h 0m 0s+917ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Mar 31, 2018 11:25:40 AM</span>
+						<span class='node-duration'>0h 0m 5s+95ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>regression</span>
+											<span class='category label white-text'>Sanity</span>
 									</div>
 									<div class='author-list right'>
 											<span class='author label white-text'>Rahul</span>
@@ -219,42 +220,38 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>11:41:52 AM</td>
-													<td class='step-details'>Entered rahul.jhajava@kljflkjds as userName</td>
+													<td class='timestamp'>11:25:40 AM</td>
+													<td class='step-details'><b>Starting execution of Test Case:- validateFBLoginWIthValidCred</b></td>
 												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='3'>
-					<div class='collapsible-header'>
-						<div class='node-name'>validateFBLoginWIthValidCred</div>						
-						<span class='node-time'>Mar 24, 2018 11:42:08 AM</span>
-						<span class='node-duration'>0h 0m 0s+498ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>regression</span>
-									</div>
-									<div class='author-list right'>
-											<span class='author label white-text'>Rahul</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>11:42:09 AM</td>
-													<td class='step-details'>Entered sdsdf as userName</td>
+													<td class='timestamp'>11:25:41 AM</td>
+													<td class='step-details'>Entered <b>rahul.jhajava@kljflkjds</b> as userName</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>11:25:42 AM</td>
+													<td class='step-details'>Entered <b>kjkasldj</b> as password</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>11:25:45 AM</td>
+													<td class='step-details'>Clicked on loginButton</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>11:25:45 AM</td>
+													<td class='step-details'><details><summary><b><font color=red>Exception Occured:Click to see</font></b ></summary>[org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)<br> com.w2a.archBatch2.PageObjects.BasePage.waitForPageLoad(BasePage.java:37)<br> com.w2a.archBatch2.PageObjects.BasePage.openPage(BasePage.java:29)<br> com.w2a.archBatch2.PageObjects.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:41)<br> com.w2a.archBatch2.TestCases.ValidateFacebookLogin.validateFBLoginWIthValidCred(ValidateFacebookLogin.java:24)<br> sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br> sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br> java.lang.reflect.Method.invoke(Unknown Source)<br> org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br> org.testng.internal.Invoker.invokeMethod(Invoker.java:661)<br> org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)<br> org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)<br> org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)<br> org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br> java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br> java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br> java.lang.Thread.run(Unknown Source)]</details></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>11:25:45 AM</td>
+													<td class='step-details'><b><font color=red>ScreenShot of failure</font></b><img data-featherlight='./Screenshots/Sat_Mar_31_11_25_45_IST_2018.png' width='10%' src='./Screenshots/Sat_Mar_31_11_25_45_IST_2018.png' data-src='./Screenshots/Sat_Mar_31_11_25_45_IST_2018.png'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>11:25:45 AM</td>
+													<td class='step-details'><span class='label white-text red'>This Test case got Failed</span></td>
 												</tr>
 										</tbody>
 									</table>
@@ -316,15 +313,15 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>regression</span>
+						<span class='category-name'>Sanity</span>
 						<span class='category-status right'>
-							<span class='label pass'>2</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -339,14 +336,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 24, 2018 11:41:51 AM</td>
-										<td class='linked' test-id='2'>com.w2a.archBatch2.TestCases.ValidateFacebookLogin.validateFBLoginWIthValidCred</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 24, 2018 11:42:08 AM</td>
-										<td class='linked' test-id='3'>com.w2a.archBatch2.TestCases.ValidateFacebookLogin.validateFBLoginWIthValidCred</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Mar 31, 2018 11:25:40 AM</td>
+										<td class='linked' test-id='2'>ValidateFacebookLogin.validateFBLoginWIthValidCred</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -393,13 +385,13 @@
                             <div class='author-heading'>
                                 <span class='author-name'>Rahul</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>2</span>
+                                        <span class='label fail'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 2</span>
                                     
+                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
 
@@ -414,14 +406,9 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Mar 24, 2018 11:41:51 AM</td>
-                                                <td class='linked' test-id='2'>com.w2a.archBatch2.TestCases.ValidateFacebookLogin.validateFBLoginWIthValidCred</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mar 24, 2018 11:42:08 AM</td>
-                                                <td class='linked' test-id='3'>com.w2a.archBatch2.TestCases.ValidateFacebookLogin.validateFBLoginWIthValidCred</td>
-                                                <td><span class='test-status pass'>pass</span></td>
+                                                <td>Mar 31, 2018 11:25:40 AM</td>
+                                                <td class='linked' test-id='2'>ValidateFacebookLogin.validateFBLoginWIthValidCred</td>
+                                                <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -454,31 +441,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 24, 2018 11:41:37 AM</div>
+					<div class='panel-lead'>Mar 31, 2018 11:25:26 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 24, 2018 11:42:12 AM</div>
+			 		<div class='panel-lead'>Mar 31, 2018 11:25:45 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>35,013ms</div>
+					<div class='panel-lead'>19,025ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -509,9 +496,9 @@
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>regression</td>
-							<td>2</td>
+							<td>Sanity</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -527,31 +514,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 2,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
-				failGrandChild: 0,
+				failGrandChild: 3,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
-				infoGrandChild: 2,
-				exceptionsGrandChild: 0,
+				infoGrandChild: 4,
+				exceptionsGrandChild: 3,
 			};
 		</script>
 		

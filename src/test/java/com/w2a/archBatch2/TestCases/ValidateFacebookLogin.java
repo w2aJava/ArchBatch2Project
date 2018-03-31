@@ -14,11 +14,13 @@ public class ValidateFacebookLogin extends TestSetUp {
 	@Test(dataProviderClass=TestUtils.class,dataProvider="dp")
 	public void validateFBLoginWIthValidCred(Hashtable<String, String> data)
 	{
-		testCaseLogger.get().assignAuthor("Rahul");
-		testCaseLogger.get().assignCategory("regression");
+		
+		assignAuthor("Rahul");
+		assignCategory("Sanity");
+	//	assignCategory("Regression");
 		//System.out.println("validateFBLoginWIthValidCredentials");
 		FacebookLandingPage landingPage= new FacebookLandingPage().open();
-		System.out.println(data);
+		//System.out.println(data);
 		FacebookHomepage homePage=landingPage.doLoginWithValidCredentials(data.get("username"), data.get("password"));
 		
 	}

@@ -11,13 +11,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.aventstack.extentreports.Status;
 
 public class FacebookLandingPage extends BasePage{
+
+
+	@FindBy(id="email")
+	public WebElement userName;
 	
-	/*public FacebookLandingPage(WebDriver driver)
-	{
-		System.out.println("driver-->"+driver);
-		PageFactory.initElements(driver, this);
-	}*/
+	@FindBy(id="pass")
+	public WebElement password;
 	
+	@FindBy(xpath="//input[@value='Log In']")
+	public WebElement loginButton;
 	
 	public  FacebookLandingPage open()
 	{
@@ -28,32 +31,21 @@ public class FacebookLandingPage extends BasePage{
 		return ExpectedConditions.visibilityOf(loginButton);
 	}
 	
-	/*@FindBy(how=How.ID,using="email")
-	public WebElement userName;*/
 	
-	@FindBy(id="email")
-	public WebElement userName;
-	
-	@FindBy(id="pass")
-	public WebElement password;
-	
-	@FindBy(xpath="//input[@value='Log In']")
-	public WebElement loginButton;
 
 	public FacebookHomepage doLoginWithValidCredentials(String email,String pass)
 	{
-		userName.sendKeys(email);
-		testCaseLogger.get().log(Status.INFO, "Entered "+email+" as userName");
-		password.sendKeys(pass);
-		loginButton.click();
+		type(userName, email, "userName");
+		type(password, pass, "password");
+		click(loginButton, "loginButton");
 		return (FacebookHomepage) openPage(FacebookHomepage.class);
 	}
 	
 	public FacebookLandingPage doLoginWithInValidCredentials(String email,String pass)
 	{
-		userName.sendKeys(email);
-		password.sendKeys(pass);
-		loginButton.click();
+		type(userName, email, "userName");
+		type(password, pass, "password");
+		click(loginButton, "loginButton");
 		return this;
 	}
 	

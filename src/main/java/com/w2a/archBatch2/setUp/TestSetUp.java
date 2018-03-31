@@ -67,7 +67,7 @@ public class TestSetUp {
 	@BeforeClass
 	public void beforeClass() {
 		// extent reporting
-		ExtentTest parent = extent.createTest(getClass().getName());
+		ExtentTest parent = extent.createTest(getClass().getSimpleName());
 		parentTest.set(parent);
 	}
 
@@ -82,8 +82,7 @@ public class TestSetUp {
 			System.out.println("Driver-->" + DriverManager.getDriver());
 			DriverManager.getDriver().navigate().to(configProperty.getProperty("url"));
 
-			ExtentTest child = parentTest.get().createNode(method.getName());
-			testCaseLogger.set(child);
+			
 		}
 
 		/*
@@ -97,7 +96,7 @@ public class TestSetUp {
 	@AfterMethod
 	public void afterMethod() {
 		extent.flush();
-		DriverFactory.destroyDriver();
+		//DriverFactory.destroyDriver();
 	}
 
 	@AfterClass
@@ -114,6 +113,16 @@ public class TestSetUp {
 	@AfterSuite
 	public void afterSuite() {
 		//
+	}
+	
+	public void assignAuthor(String authorName)
+	{
+		testCaseLogger.get().assignAuthor(authorName);
+	}
+	
+	public void assignCategory(String category)
+	{
+		testCaseLogger.get().assignCategory(category);
 	}
 
 }

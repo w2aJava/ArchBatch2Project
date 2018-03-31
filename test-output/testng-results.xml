@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="35874" started-at="2018-03-24T06:11:38Z" finished-at="2018-03-24T06:12:14Z">
+  <suite name="Suite" duration-ms="19583" started-at="2018-03-31T05:55:26Z" finished-at="2018-03-31T05:55:46Z">
     <groups>
     </groups>
-    <test name="Test2" duration-ms="35874" started-at="2018-03-24T06:11:38Z" finished-at="2018-03-24T06:12:14Z">
+    <test name="Test2" duration-ms="19583" started-at="2018-03-31T05:55:26Z" finished-at="2018-03-31T05:55:46Z">
       <class name="com.w2a.archBatch2.TestCases.ValidateFacebookLogin">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="beforeSuite" is-config="true" duration-ms="425" started-at="2018-03-24T11:41:37Z" finished-at="2018-03-24T11:41:38Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@ae13544]" name="beforeSuite" is-config="true" duration-ms="395" started-at="2018-03-31T11:25:26Z" finished-at="2018-03-31T11:25:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-03-24T11:41:38Z" finished-at="2018-03-24T11:41:38Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@ae13544]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-03-31T11:25:26Z" finished-at="2018-03-31T11:25:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="beforeClass" is-config="true" duration-ms="7" started-at="2018-03-24T11:41:38Z" finished-at="2018-03-24T11:41:38Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@ae13544]" name="beforeClass" is-config="true" duration-ms="8" started-at="2018-03-31T11:25:26Z" finished-at="2018-03-31T11:25:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="beforeMethod" is-config="true" duration-ms="13373" started-at="2018-03-24T11:41:38Z" finished-at="2018-03-24T11:41:51Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@ae13544]" name="beforeMethod" is-config="true" duration-ms="13353" started-at="2018-03-31T11:25:26Z" finished-at="2018-03-31T11:25:40Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="validateFBLoginWIthValidCred(java.util.Hashtable)[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="validateFBLoginWIthValidCred" duration-ms="4463" started-at="2018-03-24T11:41:51Z" data-provider="dp" finished-at="2018-03-24T11:41:56Z">
+        <test-method status="FAIL" signature="validateFBLoginWIthValidCred(java.util.Hashtable)[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@ae13544]" name="validateFBLoginWIthValidCred" duration-ms="4891" started-at="2018-03-31T11:25:40Z" data-provider="dp" finished-at="2018-03-31T11:25:45Z">
           <params>
             <param index="0">
               <value>
@@ -42,10 +42,10 @@
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	at com.w2a.archBatch2.PageObjects.BasePage.waitForPageLoad(BasePage.java:35)
-	at com.w2a.archBatch2.PageObjects.BasePage.openPage(BasePage.java:27)
-	at com.w2a.archBatch2.PageObjects.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:49)
-	at com.w2a.archBatch2.TestCases.ValidateFacebookLogin.validateFBLoginWIthValidCred(ValidateFacebookLogin.java:22)
+	at com.w2a.archBatch2.PageObjects.BasePage.waitForPageLoad(BasePage.java:37)
+	at com.w2a.archBatch2.PageObjects.BasePage.openPage(BasePage.java:29)
+	at com.w2a.archBatch2.PageObjects.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:41)
+	at com.w2a.archBatch2.TestCases.ValidateFacebookLogin.validateFBLoginWIthValidCred(ValidateFacebookLogin.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -65,69 +65,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateFBLoginWIthValidCred -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="afterMethod" is-config="true" duration-ms="2044" started-at="2018-03-24T11:41:56Z" finished-at="2018-03-24T11:41:58Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@ae13544]" name="afterMethod" is-config="true" duration-ms="925" started-at="2018-03-31T11:25:45Z" finished-at="2018-03-31T11:25:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="beforeMethod" is-config="true" duration-ms="10245" started-at="2018-03-24T11:41:58Z" finished-at="2018-03-24T11:42:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.w2a.archBatch2.TestCases.ValidateFacebookLogin.validateFBLoginWIthValidCred(java.util.Hashtable)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="validateFBLoginWIthValidCred(java.util.Hashtable)[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="validateFBLoginWIthValidCred" duration-ms="4301" started-at="2018-03-24T11:42:08Z" data-provider="dp" finished-at="2018-03-24T11:42:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=asdsad, username=sdsdf}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	at com.w2a.archBatch2.PageObjects.BasePage.waitForPageLoad(BasePage.java:35)
-	at com.w2a.archBatch2.PageObjects.BasePage.openPage(BasePage.java:27)
-	at com.w2a.archBatch2.PageObjects.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:49)
-	at com.w2a.archBatch2.TestCases.ValidateFacebookLogin.validateFBLoginWIthValidCred(ValidateFacebookLogin.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateFBLoginWIthValidCred -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="afterMethod" is-config="true" duration-ms="1258" started-at="2018-03-24T11:42:12Z" finished-at="2018-03-24T11:42:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-03-24T11:42:14Z" finished-at="2018-03-24T11:42:14Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@ae13544]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-03-31T11:25:46Z" finished-at="2018-03-31T11:25:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-03-24T11:42:14Z" finished-at="2018-03-24T11:42:14Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@ae13544]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-03-31T11:25:46Z" finished-at="2018-03-31T11:25:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@2cd76f31]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-03-24T11:42:14Z" finished-at="2018-03-24T11:42:14Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.w2a.archBatch2.TestCases.ValidateFacebookLogin@ae13544]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-03-31T11:25:46Z" finished-at="2018-03-31T11:25:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
