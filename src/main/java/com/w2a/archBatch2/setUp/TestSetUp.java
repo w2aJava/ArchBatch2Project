@@ -96,7 +96,7 @@ public class TestSetUp {
 	@AfterMethod
 	public void afterMethod() {
 		extent.flush();
-		//DriverFactory.destroyDriver();
+		DriverFactory.destroyDriver();
 	}
 
 	@AfterClass

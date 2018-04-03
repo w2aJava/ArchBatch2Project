@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
   <listeners>
     <listener class-name="com.w2a.archBatch2.CustomListeners.CustomeListerners"/>
   </listeners>
-  <test name="Test2(failed)" parallel="methods">
+  <test name="Test2(failed)" parallel="classes">
     <classes>
-      <class name="com.w2a.archBatch2.TestCases.ValidateFacebookLogin">
+      <class name="com.w2a.archBatch2.TestCases.ValidateZohoSignupFuntion">
         <methods>
           <include name="beforeClass"/>
-          <include name="validateFBLoginWIthValidCred" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="validateSignupWithValidCred" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.w2a.archBatch2.TestCases.ValidateZohoSignupFuntion -->
+      <class name="com.w2a.archBatch2.TestCases.ValidateZohoLoginFunction">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="validateLoginWithValidCred" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
           <include name="afterTest"/>
@@ -18,7 +31,7 @@
           <include name="beforeTest"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.w2a.archBatch2.TestCases.ValidateFacebookLogin -->
+      </class> <!-- com.w2a.archBatch2.TestCases.ValidateZohoLoginFunction -->
     </classes>
   </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
